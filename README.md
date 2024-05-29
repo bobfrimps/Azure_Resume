@@ -1,2 +1,2 @@
 # Azure_Resume
-This repo will be used for my Azure resume
+This repo is for my cloud Resume
