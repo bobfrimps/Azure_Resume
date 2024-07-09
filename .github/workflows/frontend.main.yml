@@ -24,6 +24,11 @@ jobs:
           inlineScript: |
             az storage blob upload-batch --account-name frimpsazureresume --auth-mode key -d '$web' -s frontend/
 
+             env:
+          AZURE_STORAGE_ACCOUNT: frimpsazureresume
+          AZURE_STORAGE_KEY: ${{ secrets.AZURE_STORAGE_KEY }}
+
+
       - name: Purge CDN endpoint
         uses: azure/CLI@v1
         with:
